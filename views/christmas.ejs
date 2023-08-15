@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./_head") %>
+  <body>
+    <%- include("./_nav", {nav: nav}) %>
+
+    <div class="p-3">
+      <div>
+        <div class="flex justify-center">
+          <h1 class="underline text-3xl font-bold my-3">🎁 Presents List 🎁</h1>
+        </div>
+        <div>
+          <div>👇👇👇 Request edit access!!! 👇👇👇</div>
+          <span class="font-bold">Sheet URL</span>:
+          <a
+            class="underline"
+            href="https://docs.google.com/spreadsheets/d/14m6mptVwd2enZzOtWf9_sr2Tbc6eCVliOV5eVk1yELU/edit?usp=sharing"
+            >https://docs.google.com/spreadsheets/d/14m6mptVwd2enZzOtWf9_sr2Tbc6eCVliOV5eVk1yELU/edit?usp=sharing</a
+          >
+        </div>
+        <div class="flex">
+          <!-- <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyi4fHPwAN2E8irPLBjKfs6u6QbZC-OEM8u241U5ZYDRfPvyCFRuibaXjeq6sCAwQcjeeAA3mW0Q7Q/pubhtml?widget=true&amp;headers=false"
+          ></iframe> -->
+          <iframe
+            class="w-full"
+            style="height: 500px"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyi4fHPwAN2E8irPLBjKfs6u6QbZC-OEM8u241U5ZYDRfPvyCFRuibaXjeq6sCAwQcjeeAA3mW0Q7Q/pubhtml?widget=true&amp;headers=false"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

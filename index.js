@@ -1,4 +1,3 @@
-import ejs from "ejs";
 import express from "express";
 import { fileURLToPath } from "url";
 
@@ -6,22 +5,15 @@ const router = express.Router();
 
 // views
 router.get("/", function (_, res) {
-  res.render("index");
+  res.render("index", { nav: "home" });
 });
 
-// router.get("/about", function (_, res) {
-//   res.render("about", {
-//     location: "ur mom",
-//   });
-// });
+router.get("/birthdays", function (_, res) {
+  res.render("birthdays", { nav: "birthdays" });
+});
 
-// ajax
-router.post("/lol", async function (_, res) {
-  res.send(
-    await ejs.renderFile("./hx/lol.ejs", {
-      message: "xd",
-    })
-  );
+router.get("/christmas", function (_, res) {
+  res.render("christmas", { nav: "christmas" });
 });
 
 // server
@@ -40,7 +32,7 @@ async function main() {
   app.use(express.static(fileURLToPath(new URL("./public", import.meta.url))));
 
   app.use("/", router);
-  app.listen(3000); // todo: hardcoded
+  app.listen(3002); // todo: hardcoded
 }
 
 main();

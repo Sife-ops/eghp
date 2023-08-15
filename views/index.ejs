@@ -2,132 +2,18 @@
 <html lang="en">
   <%- include("./_head") %>
   <body>
-    <div class="flex justify-center mb-2">
-      <img src="/banner.png" alt="banner" class="w-1/2" />
-    </div>
+    <%- include("./_nav", {nav: nav}) %>
 
-    <div class="bg-pink-300 p-3 pb-2">
-      <a class="mr-5 hover:underline" href="/">home</a>
-      <a class="mr-5 hover:underline" href="#">link 1</a>
-      <a class="mr-5 hover:underline" href="#">link 2</a>
-      <a class="mr-5 hover:underline" href="#">link 3</a>
-      <a class="mr-5 hover:underline" href="#">link 4</a>
-    </div>
-
-    <div class="bg-pink-100 float-left w-1/5 p-3" style="height: 100vh">
-      <ul>
-        <li class="my-3"><a class="hover:underline" href="#">recipe 1</a></li>
-        <li class="my-3"><a class="hover:underline" href="#">recipe 2</a></li>
-        <li class="my-3"><a class="hover:underline" href="#">recipe 3</a></li>
-        <li class="my-3"><a class="hover:underline" href="#">recipe 4</a></li>
+    <div class="p-3">
+      <h1 class="underline text-3xl font-bold mb-3">🤓 Instructions 🤓</h1>
+      <ul class="list-disc ml-5">
+        <li>
+          Go to the <a href="/birthdays" class="underline">Birthdays</a> or
+          <a href="/christmas" class="underline">Christmas</a> page
+        </li>
+        <li>Follow the <span>Sheet URL</span> and request edit access</li>
+        <li>Add your info to the spreadsheet!</li>
       </ul>
-    </div>
-
-    <div class="p-3" style="margin-left: 20%">
-      <h1 class="underline text-3xl font-bold">News</h1>
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-31</h3>
-        <p>
-          Maecenas placerat sagittis risus, nec hendrerit turpis pharetra in.
-          Donec sapien lectus, sollicitudin sit amet scelerisque id, cursus non
-          eros. Mauris vel augue finibus, blandit nisl in, volutpat nisi. In
-          vestibulum pellentesque varius. Phasellus maximus erat lorem, vel
-          luctus elit auctor in. Ut dapibus lectus eu ante convallis, quis
-          tempus mi rhoncus. Nunc ac sapien in mi tempus euismod ac vitae dolor.
-          Proin at ligula porta, tincidunt nibh eget, dapibus mauris. Proin
-          ultrices et augue at interdum. Maecenas sed nisl a eros euismod
-          consectetur sed a urna. Donec varius nunc eros, eget sollicitudin elit
-          aliquet quis. Cras at arcu eu sem dignissim mollis.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-30</h3>
-        <p>
-          Nullam molestie suscipit metus in tincidunt. Nam eleifend pharetra
-          est. Aenean scelerisque velit non orci tempor egestas. Curabitur sem
-          dolor, varius sit amet imperdiet ut, tincidunt ac eros. Suspendisse
-          sit amet mi ac urna fringilla aliquam ut et sem. Sed porta aliquam
-          tempus. Vivamus ac augue eget diam molestie venenatis sit amet et
-          tortor. In suscipit viverra velit. Curabitur erat turpis, posuere sed
-          viverra et, iaculis efficitur eros.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-29</h3>
-        <p>
-          Nullam molestie suscipit metus in tincidunt. Nam eleifend pharetra
-          est. Aenean scelerisque velit non orci tempor egestas. Curabitur sem
-          dolor, varius sit amet imperdiet ut, tincidunt ac eros. Suspendisse
-          sit amet mi ac urna fringilla aliquam ut et sem. Sed porta aliquam
-          tempus. Vivamus ac augue eget diam molestie venenatis sit amet et
-          tortor. In suscipit viverra velit. Curabitur erat turpis, posuere sed
-          viverra et, iaculis efficitur eros.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-28</h3>
-        <p>
-          Duis nec rutrum tortor, in blandit lorem. Donec luctus non tortor in
-          consectetur. Cras nec ipsum pellentesque, pretium diam euismod,
-          tristique lacus. Mauris fermentum tempor risus, at dignissim quam
-          sodales at. Nulla id diam eu libero volutpat pellentesque. Vivamus id
-          tortor eget erat feugiat mollis. Pellentesque maximus, sem consectetur
-          maximus euismod, purus ligula tincidunt nisi, nec convallis ligula sem
-          in magna.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-27</h3>
-        <p>
-          Sed quis accumsan ante. Aenean fringilla dapibus ultrices. Nullam
-          nulla dolor, tincidunt eget eros in, viverra congue ex. Nunc non est
-          id purus rhoncus pretium vel sed neque. Integer ac massa nec dui
-          pretium ultrices. Suspendisse sed sapien quam. Phasellus laoreet, nunc
-          at vestibulum convallis, eros nulla blandit velit, quis ultricies ante
-          neque ut nisl. Donec cursus ante ullamcorper mi mattis viverra. In
-          eleifend maximus ex, in fermentum nunc tincidunt ut. Aliquam lectus
-          nibh, vestibulum eget posuere sed, feugiat condimentum dolor. Fusce ut
-          quam vitae lacus auctor tempus at at risus. Nulla luctus gravida
-          convallis. Aenean nec interdum risus. Suspendisse non sapien nibh.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-26</h3>
-        <p>
-          Nunc finibus quam et orci aliquam, feugiat venenatis elit efficitur.
-          Maecenas at mi in velit tempor tristique a non tellus. Vestibulum
-          commodo ipsum magna, a cursus ipsum ultrices sit amet. Proin eu mauris
-          luctus, malesuada sem nec, convallis nunc. Mauris commodo libero enim,
-          nec faucibus lorem auctor quis. Vivamus ultrices lobortis libero, eget
-          accumsan lacus tincidunt congue. Nulla aliquam augue sed arcu
-          condimentum condimentum. Duis aliquet lacinia nisl ac placerat.
-          Praesent sed orci et nunc facilisis finibus a vel dolor. In ut semper
-          augue. Nullam vitae pellentesque quam, ac rhoncus leo. Aliquam auctor
-          augue ut orci faucibus, nec elementum dolor venenatis. Nunc pulvinar
-          arcu sed venenatis ultricies. Duis placerat tempus pharetra.
-        </p>
-      </div>
-
-      <div class="article">
-        <h3 class="font-bold my-3">2023-8-25</h3>
-        <p>
-          Ut arcu ipsum, pharetra eget viverra in, tempor et nunc. Ut vitae
-          mauris interdum, iaculis massa vel, vehicula ligula. Praesent vehicula
-          rhoncus ipsum vitae pharetra. Curabitur venenatis, turpis id elementum
-          semper, mi metus aliquet nisl, quis egestas nisi orci ut leo. Fusce eu
-          scelerisque metus. Morbi est mi, pellentesque in nunc et, elementum
-          cursus ante. Donec eu vehicula urna. Maecenas finibus, mi vitae
-          ultrices feugiat, lectus neque faucibus ante, nec cursus elit quam nec
-          sem. Curabitur maximus leo eu purus ullamcorper ullamcorper. Nulla
-          convallis vitae diam vitae varius. Nulla a libero nec magna tempor
-          vulputate.
-        </p>
-      </div>
     </div>
   </body>
 </html>
